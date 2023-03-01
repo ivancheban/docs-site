@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Концептуальна модель даних :: Реєстр міського електротранспорту</title>
+    <title>Версіонування :: Реєстр міського електротранспорту</title>
     <meta name="generator" content="Antora 3.1.2">
     <link rel="stylesheet" href="../../_/css/site.css">
     <script>var uiRootPath = '../../_'</script>
@@ -28,7 +28,7 @@
 <script src="../../_/vendor/medium-zoom/medium-zoom.min.js"></script>
 <script src="../../_/vendor/medium-zoom/medium-zoom.config.js"></script>
 <div class="body">
-<div class="nav-container" data-component="component-a" data-version="">
+<div class="nav-container" data-component="docs" data-version="">
   <aside class="nav">
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
@@ -47,13 +47,13 @@
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Концептуальна модель даних</span>
 <ul class="nav-list">
-  <li class="nav-item is-current-page" data-depth="2">
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="data-model.html">Концептуальна модель даних</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="use-cases.html">Сценарії використання</a>
   </li>
-  <li class="nav-item" data-depth="2">
+  <li class="nav-item is-current-page" data-depth="2">
     <a class="nav-link" href="versioning.html">Версіонування</a>
   </li>
   <li class="nav-item" data-depth="2">
@@ -93,30 +93,57 @@
 <main class="article">
 <div class="toolbar" role="navigation">
 <button class="nav-toggle"></button>
-  <a href="../index.html" class="home-link"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../index.html">Реєстр міського електротранспорту</a></li>
     <li>Концептуальна модель даних</li>
-    <li><a href="data-model.html">Концептуальна модель даних</a></li>
+    <li><a href="versioning.html">Версіонування</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/ivancheban/demo-component-a/edit/master/modules/ROOT/pages/data-model/data-model.adoc">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="https://github.com/ivancheban/demo-component-a/edit/master/modules/ROOT/pages/data-model/versioning.adoc">Edit this Page</a></div>
   </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Концептуальна модель даних</h1>
-<div class="paragraph">
-<p>Поточна концептуальна модель даних</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/data-model-concept.png" alt="data model concept">
-</div>
-</div>
+<h1 class="page">Версіонування</h1>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Версія</th>
+<th class="tableblock halign-left valign-top">Ціль</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">POC</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1. Продемонструвати технічну можливість створити каталог Комунальних ТЗ з базови набором данних (ТЗ, Тип ТЗ, Акт передачі, Громада). Підтримка імпорту ТЗ з XLS.</p>
+<p class="tableblock">  2. Продемонструвати систему управління доступом​.</p>
+<p class="tableblock">  3. Звіт про наявні ТЗ (фільтра – регіон, пробіг, громада, тип ТЗ).​</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">V1.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1. Продукціоналізувати POC.​</p>
+<p class="tableblock">2. Додати управління користувачами.</p>
+<p class="tableblock">3. Створити всі передумови для внесення Громадами данниз в реєстр.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">V2.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1. Поглибити наявну інформацію про експлуатацію ТЗ данними про: Імпорт, Ремонти, Маршрути, Водіїв, Акти списання.​</p>
+<p class="tableblock"> 2. Додати підтверджуючі документи (скани актів, марштурних і т.д.)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">V3.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1. Додати підтримку трекінгу.​</p>
+<p class="tableblock"> 2. Розширити звіти</p></td>
+</tr>
+</tbody>
+</table>
 </article>
   </div>
 </main>
