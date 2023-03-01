@@ -21,6 +21,12 @@
     </div>
   </nav>
 </header>
+
+<link rel="stylesheet" href="../_/vendor/medium-zoom/medium-zoom.css">
+
+
+<script src="../_/vendor/medium-zoom/medium-zoom.min.js"></script>
+<script src="../_/vendor/medium-zoom/medium-zoom.config.js"></script>
 <div class="body">
 <div class="nav-container" data-component="component-a" data-version="">
   <aside class="nav">
@@ -38,23 +44,14 @@
     <a class="nav-link" href="engagement-structure.html">Структура участі у проєкті GovTech / DSBT.GOV.UA</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="admonition.html">Admonition</a>
-  </li>
-  <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="sidebar.html">Sidebar</a>
-  </li>
-  <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="ui-macros.html">User Interface Macros</a>
-  </li>
-  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Lists</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="lists/ordered-list.html">Ordered Lists</a>
+    <a class="nav-link" href="data-model/data-model.html">Концептуальна модель даних</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="lists/unordered-list.html">Unordered Lists</a>
+    <a class="nav-link" href="data-model/unordered-list.html">Unordered Lists</a>
   </li>
 </ul>
   </li>
@@ -95,31 +92,47 @@
 <h1 class="page">Структура участі у проєкті GovTech / DSBT.GOV.UA</h1>
 <div id="preamble">
 <div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="_images/engagement-structure-ukr.png" alt="engagement structure ukr">
+</div>
+</div>
 <details class="result">
 <summary class="title">Структура участі (англ)</summary>
 <div class="content">
-<div class="imageblock unresolved">
+<div class="imageblock">
 <div class="content">
-<img src="engagement-structure-ukr.png" alt="engagement structure ukr">
+<img src="_images/engagement-structure.png" alt="engagement structure">
 </div>
 </div>
 </div>
 </details>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_навички_учасників"><a class="anchor" href="#_навички_учасників"></a>Навички учасників</h3>
-<div class="paragraph">
-<p>![Skills](img/skills.png)</p>
+<div class="sect1">
+<h2 id="_навички_учасників"><a class="anchor" href="#_навички_учасників"></a>Навички учасників</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="_images/skills.png" alt="skills">
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_вступ"><a class="anchor" href="#_вступ"></a>Вступ</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>:::note
-Зроблено на основі документації [Spotify](<a href="https://www.atlassian.com/agile/agile-at-scale/spotify" class="bare">https://www.atlassian.com/agile/agile-at-scale/spotify</a>), адаптованої до вимог хакатону.
-:::</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Зроблено на основі документації <a href="https://www.atlassian.com/agile/agile-at-scale/spotify">Spotify</a>, адаптованої до вимог хакатону.
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p>Цей документ пояснює «модель Spotify» для простішої організації роботи. Команди поділено на міжфункціональні та автономні «підрозділи» (squads) та «гільдії» (guilds), що надають багатофункціональні послуги для підрозділів. Ця модель використовується для хакатону MilTech &amp; GovTech, де підрозділи відповідають за розробку функціональності, а гільдії надають підтримку та збирають нефункціональні вимоги.</p>
@@ -141,7 +154,8 @@
 <ul>
 <li>
 <p>Склад підрозділу</p>
-</li>
+<div class="ulist">
+<ul>
 <li>
 <p>Лідер (Lead)</p>
 </li>
@@ -151,9 +165,13 @@
 <li>
 <p>Учасники команди</p>
 </li>
+</ul>
+</div>
+</li>
 <li>
 <p>Обов’язки підрозділу</p>
-</li>
+<div class="ulist">
+<ul>
 <li>
 <p>Розробка функціональності у вигляді програмного коду і документації відповідно до вимог замовника</p>
 </li>
@@ -162,25 +180,40 @@
 </li>
 </ul>
 </div>
+</li>
+</ul>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_гільдії"><a class="anchor" href="#_гільдії"></a>Гільдії</h3>
-<div class="paragraph">
-<p>:::caution
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
 У поточній реалізації є певне об’єднання Гільдії та Філії з точки зору класичної моделі Spotify.
-:::</p>
+</td>
+</tr>
+</table>
 </div>
 <div class="ulist">
 <ul>
 <li>
 <p>Структура Гільдії</p>
-</li>
+<div class="ulist">
+<ul>
 <li>
 <p>Учасники команди, яким подобається тема, можуть сформувати Гільдію, яка, по суті, є спільнотою за інтересами. Будь-хто може приєднатися до Гільдії на добровільних засадах. На відміну фід Філій, які належать до одному племені, Гільдії можуть охоплювати різні племена. Формального лідера Гільдії немає. Швидше, хтось сам зголошується стати координатором Гільдії та допомогти об’єднати людей.</p>
 </li>
+</ul>
+</div>
+</li>
 <li>
 <p>Обов’язки Гільдії</p>
-</li>
+<div class="ulist">
+<ul>
 <li>
 <p>Надання міжфункціональних послуг для команд: напр. DevOps, QA</p>
 </li>
@@ -192,10 +225,20 @@
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>:::tip
-Можливо, для №2-3 [АНАЛІЗ РЕЖИМІВ ВІДМОВИ ТА НАСЛІДКІВ (FMEA)](<a href="https://asq.org/quality-resources/fmea" class="bare">https://asq.org/quality-resources/fmea</a>) підхід до «Рекомендованих дій» буде чудовим артефактом за результатами Хакатону
-:::</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Можливо, для №2-3 <a href="https://asq.org/quality-resources/fmea">АНАЛІЗ РЕЖИМІВ ВІДМОВИ ТА НАСЛІДКІВ (FMEA)</a> підхід до «Рекомендованих дій» буде чудовим артефактом за результатами Хакатону.
+</td>
+</tr>
+</table>
 </div>
 </div>
 </div>
